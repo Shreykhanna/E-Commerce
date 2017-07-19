@@ -1,0 +1,131 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1 Jun, 2017, 8:38:05 AM
+    Author     : shrey
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none; 
+ }
+ body{
+     font:15px Arial,Helvetica,sans-serif;
+     background-color: #f4f4f4;
+     /*line-height: 1.5px;*/
+ }
+ header{
+     background: #35424a;
+     color:#ffffff;
+     padding-top: 20px;
+     min-height: 120px;
+     border-bottom: #e8491d 3px solid;
+ }
+ header a{
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 16px;
+ } 
+ header ul{
+     margin: 0;
+     padding: 0;
+ }
+ header li{
+     float: left;
+     display: inline;
+     padding: 15px 20px;
+ }
+ header li ul{
+     display:  none;
+     position: absolute;
+ }
+ header li:hover ul{
+    display: block;
+    float: bottom;
+    margin-bottom:-29px;    
+}
+header #branding{
+    float: left;
+    margin: 0px;
+}
+header nav{
+    margin-top: 26px; 
+}
+header a:hover{
+    color:#cccccc;
+    font-weight: bold;    
+}
+header .top_nav #button_signIn{
+    color: black;
+    float: right;
+    height: 30px;
+    width: 80px;
+    margin-top: 6px;  
+}
+header .top_nav #button_admin{
+    color: black;
+    float:right;
+    height: 30px;
+    width: 80px;
+    margin-top: 6px;      
+}
+header .top_nav #userName{
+     float: right;
+     margin-top: 10px;
+     padding-right: 40px;
+     margin-right: 20px;
+     
+ }
+header .top_nav #button_signout{
+    color: black;
+    float: right;
+    height: 30px;
+    width: 80px;
+    margin-top: 6px;  
+}
+#showcase{
+    min-height: 200px;
+    background: no-repeat 0 -400px;
+}
+#category{   
+    background-color: white;
+}
+.container-fluid{
+    min-height: 200px;
+ } 
+ #boxes .box{
+     float: left;
+     width: 30%;
+     text-align: center;
+     padding: 10px;    
+ }
+ 
+ #boxes .button_signup{
+     margin-top: 60px;
+     width: 80px;
+     height: 40px;
+     background-color:#e8491d;
+     border: 0;
+ }
+ 
+ .button_backUp{
+     width: 200px;
+     height: 40px;
+     color: black;
+     background-color:white;     
+     border: 0;
+     margin-left: 40%;
+     margin-right: 40%;
+ }
+footer{
+padding: 20px;
+margin-top: 300px;
+color:#ffffff;
+background-color: #e8491d;
+}
+
+
+

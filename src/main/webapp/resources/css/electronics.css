@@ -1,0 +1,49 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3 Jun, 2017, 1:16:26 PM
+    Author     : shrey
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none; 
+ }
+header{
+     background: #35424a;
+     color:#ffffff;
+     padding-top: 20px;
+     min-height: 120px;
+     border-bottom: #e8491d 3px solid;
+ }
+ div #link_electronics{
+     background: #d4d4d4;
+     color: #000;    
+     min-height: 20px;
+     border-bottom: #ffffff 3px solid;     
+ }
+ div #link_electronics li{
+     float:left;
+     padding: 0px 30px;
+     color: #ffffff;
+ }
+ #showcase{
+    min-height: 400px;
+    background: no-repeat 0 -400px;
+}
+ div #best_phones{
+     font-style: italic;
+ }
+ #electronicsitems{
+     margin-top: 20px;   
+ }
+ #electronicsitems .box{
+     float: left;
+     width: 30%;
+     text-align: center;
+     padding: 10px;    
+ }
+  
