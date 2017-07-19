@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>E-Commerce</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css" >
+<!-- Optional theme -->
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<!-- Custom CSS-->
+<link rel="stylesheet" href="css/customcss.css">
+    </head>
+    <body>   
+            <div id="category">
+                <header>                    
+                        <div id="branding">
+                            <h1>E-Commerce</h1>
+                        </div>
+                        <nav class="top_nav">
+                        <ul class="categoryTab">
+                            <li>
+                                <a href="">Home</a> 
+                            </li>
+                            <li>
+                                <a href="" id="products">Products</a>
+                                <ul>
+                                    <li>
+                                        <a href="electronics.html" id="electronics">Electronics</a>
+                                        
+                                    </li>
+                                    <li>
+                                        <a href="clothes.html">Clothes</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Accessories</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Contact</a> 
+                            </li>                            
+                        </ul>                             
+                            <button type="submit" id="button_signIn" data-toggle="modal" data-target="#login_popupWindow">SignIn</button>
+                        </nav>            
+                </header>
+            </div>                    
+                <section id="showcase">
+                <div class="container-fluid" >   
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="my-slider" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#my-slider" data-slide-to="0" class="active"></li>   
+                                <li data-target="#my-slider" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="images/electronics.jpg" alt="appliances"/>                                   
+                                    <div class="carousel-caption">
+                                    <h1>Electronics 20% off</h1>                                   
+                                    </div>
+                                  </div>
+                                <div class="item">
+                                    <img src="images/mensclothes.jpeg" alt="clothes" height="415" width="380"/>                                
+                                    <div class="carousel-caption">
+                                    <h1>Fresh Arrivals</h1>
+                                    </div>
+                                </div>
+                        <a class="left carousel-control" href="#my-slider" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
+                            <span class="sr-only">Previous</span>
+                        </a>                                  
+                        <a class="right carousel-control" href="#my-slider" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
+                            <span class="sr-only">Next</span>
+                        </a>       
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>                    
+   </section>        
+        <section id="boxes">
+            <div class="box"> 
+                <h1>SignUp to discover awsomeness</h1>
+                  <button type="submit" name="submit" class="button_signup" data-toggle="modal" data-target="#signup_popupWindow">SignUp</button>
+            </div>
+                <div class="box">
+                    <h2>Popular Categories</h2>
+                </div>   
+                <div class="box">
+                    <h2>Write your queries here</h2>
+                </div>                      
+        </section>                
+        <footer>            
+           <button type="submit" class="button_backUp">Back Up</button>
+        </footer>  
+        <div class="container">
+            <div class="modal fade" id="signup_popupWindow">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button> 
+                            <h2 class="modal-title">Sign up</h2>
+                        </div>
+                        <div class="modal-body">
+                            <form role="form" action="dbServlet">
+                                <div class="form-group">
+                                   <label>Name </label>
+                                    <b><input type="text" class="form-control" name="name" placeholder="Name"/></b>
+                                    <label>User Name </label>
+                                    <b><input type="text" class="form-control" name="username" placeholder="Username"/></b>
+                                    <label>Password</label>
+                                    <b><input type="password" class="form-control" name="password" placeholder="Password"/></b>
+                                    <label>Address</label>
+                                    <b><input type="text" class="form-control" name="address" placeholder="Address"/></b> 
+                                    <label>Phone No.</label>
+                                    <b><input type="text" class="form-control" name="phoneno" placeholder="Phone No."/></b> 
+                                 </div> 
+                                 <div class="modal-footer" >
+                                   <button class="btn btn-primary btn-block">Sign Up</button>                                    
+                                </div>                                
+                            </form>                            
+                        </div>
+                    </div>               
+               </div>            
+          </div>
+    </div>               
+        <div class="container">
+            <div class="modal fade" id="login_popupWindow">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>                            
+                            <h2 class="modal-title">Log In</h2>
+                        </div>
+                        <div class="modal-body">
+                            <form role="form" action="dbServlet">
+                                <div class="form-group"> 
+                                    <label>User Name </label>
+                                    <b><input type="text" class="form-control" name="username_login" placeholder="Username"/></b>
+                                    <label>Password</label>
+                                    <b><input type="password" class="form-control" name="password_login" placeholder="Password"/></b>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary btn-block" name="login_submit">Login</button> 
+                                </div>                        
+                            </form>
+                        </div>                       
+                    </div>
+                </div>                
+            </div>
+        </div> 
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>   
+</html>
